@@ -1,4 +1,4 @@
-package com.katharsys.fraud;
+package com.katharsys.clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 
