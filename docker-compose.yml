@@ -29,6 +29,11 @@ services:
     restart: unless-stopped
     depends_on:
       - db
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
 
 networks:
   postgres:
